@@ -10,7 +10,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if(body.message) {
             callback('Unable to fetch the forecast', undefined)
         } else {
-            callback(undefined, body.weather[0].description +". It is currently " + body.main.temp + " degrees out. But it feels like " + body.main.feels_like + " degrees out.")
+            callback(undefined, body.weather[0].description +". It is currently " + body.main.temp + " degrees out. But it feels like " + body.main.feels_like + " degrees out. The high today is " + body.main.temp_max + " with a low of " + body.main.temp_min + ". There is " + body.main.humidity + "% chance of humidity.")
         }
     })
 }

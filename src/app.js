@@ -42,7 +42,8 @@ app.get('/about', (req, res)=>{
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Need Help?',
-        desc: 'This is help section which you can refer to know about the website'
+        name:'Gauri',
+        helpText: 'This is help section which you can refer to know about the website'
     })
 
 })

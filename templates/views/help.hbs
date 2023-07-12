@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <title>Help</title>
     <link rel="icon" href="/img/weather-icon.png">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
-    <!--partials-->
-    {{>header}}
-    <!--dynamic templating using handlebars-->
-    <!--<h1>{{title}}</h1>-->
-    <p>{{desc}}</p>
+    <div class="main-content">
+        {{>header}}
+        <!--dynamic templating using handlebars-->
+        <!--<h1>{{title}}</h1>-->
+        <p>{{helpText}}</p>
+    </div>
+    
+    {{>footer}}
 </body>
 
 </html>
